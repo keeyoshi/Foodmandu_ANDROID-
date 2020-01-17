@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <com.synnapps.carouselview.CarouselView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/caral"
+        app:pageColor="#ede4ed"
+        app:fillColor="#ede4ed"
+        app:slideInterval="3000"
+        app:radius="6dp"
+        app:strokeColor="#ede4ed"
+        app:strokeWidth="1dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCategory"
+        android:text="Categories"
+        android:fontFamily="sans-serif-black"
+        android:textSize="20sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="233dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bhaktapur" />
+
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/happylunch"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            android:background="#1a0000">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#FFFFFF"
+                android:text="IN THE SPOTLIGHT"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:textColor="#FFFFFF"
+                android:text="Chef's special mention"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_b"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="1dp"
+            android:scrollbars="horizontal"
+            app:fastScrollEnabled="false"
+            />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/bd" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="109dp"
+            android:src="@drawable/fonepay" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="New Members"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerView_c"
+            android:orientation="vertical"
+            android:layout_marginTop="1dp"
+            android:scrollbars="vertical"
+            app:fastScrollEnabled="false"/>
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="171dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/high" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Alcoholic Beverages"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:text="Selection of Finest Liqours in attractive prices"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerView_d"
+            android:orientation="horizontal"
+            android:layout_marginTop="1dp"
+            android:scrollbars="horizontal"
+            app:fastScrollEnabled="false"/>
+
+    </LinearLayout>
+
+
+</ScrollView>
